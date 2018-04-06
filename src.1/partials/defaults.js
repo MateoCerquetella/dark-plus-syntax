@@ -1,5 +1,11 @@
 module.exports = [
     {
+        "settings": {
+            "foreground": "#d4d4d4ff",
+            "background": "#1e1e1eff",
+        },
+    },
+    {
         "scope": [
             "comment",
             "comment.line.double-slash.js",

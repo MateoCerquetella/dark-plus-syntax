@@ -2,6 +2,7 @@
 	"name": "dark-plus-syntax",
 	"type": "dark",
 	"colors": {
+		"foreground": "#d4d4d4ff",
 		"list.dropBackground": "#383b3d",
 		"editor.background": "#1e1e1e",
 		"editor.foreground": "#d4d4d4",
@@ -25,12 +26,6 @@
 		"gitDecoration.conflictingResourceForeground": "#d16969"
 	},
 	"tokenColors": [
-		{
-			"settings": {
-				"foreground": "#d4d4d4ff",
-				"background": "#1e1e1eff"
-			}
-		},
 		{
 			"scope": [
 				"comment",

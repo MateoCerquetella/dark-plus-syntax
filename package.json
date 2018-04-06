@@ -20,12 +20,14 @@
 			{
 				"label": "dark-plus-syntax",
 				"uiTheme": "vs-dark",
-				"path": "./themes/dark-plus-syntax-color-theme.json"
+				"path": "./themes/dark-plus-syntax.json"
 			}
 		]
 	},
 	"devDependencies": {
+		"@types/node": "^9.6.2",
 		"bootstrap": "^4.0.0",
+		"rollup": "^0.57.1",
 		"write-json-file": "^2.2.0"
 	},
 	"scripts": {

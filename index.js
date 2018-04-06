@@ -1,9 +1,9 @@
 const writeJsonFile = require('write-json-file');
 
-const cs            = require('./src/partials/cs');
+const csharp        = require('./src/partials/cs');
 const css           = require('./src/partials/css');
 const defaults      = require('./src/partials/defaults');
-const go            = require('./src/partials/go');
+const golang        = require('./src/partials/go');
 const html          = require('./src/partials/html');
 const java          = require('./src/partials/java');
 const javascript    = require('./src/partials/javascript');
@@ -17,9 +17,9 @@ let nop = [];
 
 let tokenz = nop.concat(
     defaults,
-    cs,
+    csharp,
     css,
-    go,
+    golang,
     java,
     javascript,
     markup,
@@ -34,6 +34,9 @@ let base = {
     "name": "dark-plus-syntax",
     "type": "dark",
     "colors": {
+
+        "foreground": "#d4d4d4ff",
+
         "list.dropBackground": "#383b3d",
 
         "editor.background": "#1e1e1e",
@@ -122,12 +125,12 @@ let base = {
         // "statusBar.noFolderBackground": "#303030",
         // "statusBar.debuggingBackground": "#303030",
     },
-    "tokenColors": tokenz
-}
+    "tokenColors": tokenz,
+};
 
 let output = './themes/dark-plus-syntax-color-theme.json';
 
 /* https://github.com/sindresorhus/write-json-file */
-writeJsonFile(output, base).then(() => {
-    console.log('=== Done! ===\n');
-});
+writeJsonFile(output, base).then(() => console.log('=== Done! ===\n'));
+
+process.stdout.write(JSON.stringify(base) + '\n');
